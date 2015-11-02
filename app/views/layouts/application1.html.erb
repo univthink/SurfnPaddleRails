@@ -1,0 +1,18 @@
+<html>
+<% def one_post %>
+<% @post1 = @posts.take(1) %>
+<%  @post1.each do |n| %>
+<div class="n">
+    <h1><%= n.title %></h1>
+    <a href="">
+          <h2 class="post-title"?
+          </h2>
+          <h3 class="post-subtitle">
+            <%= n.body %>
+          </h3>
+      </a>
+
+      <p class="post-meta">Posted by <a href="#"><%= n.author %></a> on <%= n.created_at %></p>
+<%  end %>
+<% end %>
+<%= link_to "Home", '/'  %></html>

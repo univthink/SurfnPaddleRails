@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <%= stylesheet_link_tag 'application.css' %>
+  </head>
+  <body>
+    <div class="site-info">
+      <h2>Universally Thinking</h2>
+    </div>
+    <div class="nav">
+      <ul><li>About</li><li>Home</li></ul>
+    </div>
+    <div class="header">
+        <center><div class="header-banner">
+          <h1>Nobody likes a boring header...</h1>
+            <h2>Followed by a Boring Header</h2>
+        </div></center>
+    </div>
+
+<div class="main">
+  <div class="main-left">
+  <%= @one_post -%>
+</div></div>
+  <div class="main-right">
+    <center><div class="sidebar-headline">
+    <img src="/assets/Seabrook-Barnett.jpeg"><br><span class="Seabrook">Seabrook Barnett</span><br><br>
+  <a href="#">Twitter</a><a href="#"> Facebook</a><a href="#"> Instagram</a></div></center><br>
+  <div class="add"><center><img src="/assets/UT.png"></center>
+  <span class="ad">About This AD</span><br><br><br><br></div>
+  <h3 class="Seabrook">Sidebar Heading</h3><br>
+  <p>Est Schlitz shoreditch fashion axe. Messenger bag cupidatat Williamsburg sustainable aliqua, artisan duis pickled pitchfork. Semiotics Banksy ad roof party, jean shorts selvage mollit vero consectetur hashtag before they sold out blue bottle qui nihil aute. Aliquip artisan retro squid ullamco. Vegan enim Williamsburg, eu umami shabby chic single-origin coffee et.</p>
+</div>
+
+  <div class="foot">
+  <div><center><h1 class="footer">Most Popular</h1></center></div>
+  <div class="images"><%= link_to "/posts/1" do %><i class="active"></i><img src="/assets/img1.jpg"></a><% end %>
+    <%= link_to "/posts/1" do %><i class="active"></i><img src="/assets/img2.jpg"></a><% end %>
+    <%= link_to "/posts/1" do %><i class="active"></i><img src="/assets/img3.jpg"></a><% end %>
+    <%= link_to "/posts/1" do %><i class="active"></i><img src="/assets/img4.jpg"></a><% end %></div>
+  <div class="footer"><span class="footer-left">Universally Thinking 2015 | All Rights Reserved</span><span class="footer-right"><a class="link" href="#">About  </a><a class="link" href="3">Home</a></span>
+  </div>
+</div>
+</body>
+
+
+</html>
