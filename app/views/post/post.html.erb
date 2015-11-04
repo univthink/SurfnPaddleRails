@@ -1,4 +1,3 @@
-
 <html>
   <head>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
@@ -19,7 +18,9 @@
     </div>
 
 <div class="main">
-  <div class="main-left" style=";">
+  <div class="main-left">
+    <% @post1 = Post.find(params[:id].to_i) %>
+
     <div class="n">
         <h1><%= @post1.title %></h1>
         <a href="">
