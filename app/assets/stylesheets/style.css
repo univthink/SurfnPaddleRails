@@ -1,4 +1,4 @@
-div.header {height: 80vh; width:100%; background: url('/assets/tech.jpg') no-repeat; background-size: cover; padding: 1 1 1 1; margin: 0 0 0 0; background-position: center center;}
+div.header {//height: 80vh; width:100%; background: url('/assets/tech.jpg') no-repeat; background-size: cover; padding: 1 1 1 1; margin: 0 0 0 0; background-position: center center;}
 body, html {
   font-family: 'Montserrat';
 }
@@ -31,28 +31,28 @@ div.nav ul li {
   font-family: 'Montserrat';
 }
 div.main {
-  min-height: 910px;
+  //min-height: 910px;
   display: inline-block;
-  width: 100vw;
-  margin-top: 5%;
+  width: 0vw;
+  margin-top: 1%;
   border-bottom: 2px solid lightgray;
-  max-height: 2000px;
-  height: auto;
-  overflow: scroll;
+  //max-height: 2000px;
+  //height: auto;
+  overflow: visible;
 }
 div.main-left {
-  width: 42vw;
+  width: 40vw;
   margin-left: 10%;
   margin-top: 2.5%;
   float: left;
-  height: 110vh;
+  //height: 110vh;
 }
 div.main-right {
-  width: 23vw;
+  width: 20vw;
   margin-right: 10%;
   margin-top: 2.5%;
   float: right;
-  height: 110vh;
+  //height: 110vh;
 }
 div.main-left h1 {
   font-size: xx-large;
@@ -60,7 +60,7 @@ div.main-left h1 {
   color: #5591C3;
 }
 div.headline img {
-  height: 30px;
+  //height: 30px;
   width: 30px;
   border-radius: 100%;
 }
@@ -70,7 +70,7 @@ div.paragraph-header {
  color: #5591C3;
 }
 div.sidebar-headline img {
-  height: 50px;
+//height: 50px;
   width: 50px;
   border-radius: 100%;
 }
@@ -110,7 +110,7 @@ a.link {
   text-decoration: none;
 }
 div.images img {
-  width: 25vw;
+  width: 24vw;
 }
 div.images {
   width: 100vw;
@@ -138,13 +138,14 @@ span.footer-left {
   color: white;
   width: 45vw;
   padding-top: 40px;
-  padding-left: 45px;
+  margin-left: 45px;
 }
 span.footer-right {
     float: right;
     padding-right: 45px;
     padding-top: 40px;
 }
-.foot {
-
+i.active {
+  padding: 0px;
+  margin: 0px;
 }

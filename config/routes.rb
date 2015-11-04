@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
 
-  root 'post#index'
+  root 'application#allPosts'
 
-  get 'posts/(:id)' => 'post#index'
-
-  get 'home' => 'post#one_post'
+  get 'posts/(:id)' => 'application#show'
+  def show
+  @posts = Post.all
+  @post1 = Post.find(params[:id].to_i)
+  render template: "post/post"
+end
 
 
 
