@@ -12283,3 +12283,166 @@ Started GET "/assets/img4.jpg" for ::1 at 2015-11-04 20:20:47 -0500
 
 
 Started GET "/assets/img3.jpg" for ::1 at 2015-11-04 20:20:47 -0500
+
+
+Started GET "/home" for ::1 at 2015-11-05 08:56:50 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (2.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#all as HTML
+  [1m[35mPost Load (2.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered post/all.html.erb (166.6ms)
+Completed 200 OK in 201ms (Views: 179.5ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/Seabrook-Barnett.jpeg" for ::1 at 2015-11-05 08:56:51 -0500
+
+
+Started GET "/assets/UT.png" for ::1 at 2015-11-05 08:56:51 -0500
+
+
+Started GET "/assets/img1.jpg" for ::1 at 2015-11-05 08:56:51 -0500
+
+
+Started GET "/assets/img3.jpg" for ::1 at 2015-11-05 08:56:51 -0500
+
+
+Started GET "/assets/img2.jpg" for ::1 at 2015-11-05 08:56:51 -0500
+
+
+Started GET "/assets/img4.jpg" for ::1 at 2015-11-05 08:56:51 -0500
+
+
+Started GET "/assets/tech.jpg" for ::1 at 2015-11-05 08:56:51 -0500
+
+
+Started GET "/home" for ::1 at 2015-11-05 08:57:05 -0500
+Processing by PostsController#all as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered post/all.html.erb (8.4ms)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/UT.png" for ::1 at 2015-11-05 08:57:05 -0500
+
+
+Started GET "/assets/Seabrook-Barnett.jpeg" for ::1 at 2015-11-05 08:57:05 -0500
+
+
+Started GET "/assets/img1.jpg" for ::1 at 2015-11-05 08:57:05 -0500
+
+
+Started GET "/assets/img2.jpg" for ::1 at 2015-11-05 08:57:05 -0500
+
+
+Started GET "/assets/img3.jpg" for ::1 at 2015-11-05 08:57:05 -0500
+
+
+Started GET "/assets/img4.jpg" for ::1 at 2015-11-05 08:57:05 -0500
+
+
+Started GET "/assets/tech.jpg" for ::1 at 2015-11-05 08:57:05 -0500
+
+
+Started GET "/posts/33/delete" for ::1 at 2015-11-05 08:57:11 -0500
+Processing by PostsController#destroy as HTML
+  Parameters: {"id"=>"33"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "posts" WHERE "posts"."id" = ?  [["id", 33]]
+  [1m[36m (6.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/home
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Completed 302 Found in 44ms (ActiveRecord: 7.4ms)
+
+
+Started GET "/home" for ::1 at 2015-11-05 08:57:11 -0500
+Processing by PostsController#all as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered post/all.html.erb (7.6ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/Seabrook-Barnett.jpeg" for ::1 at 2015-11-05 08:57:11 -0500
+
+
+Started GET "/assets/UT.png" for ::1 at 2015-11-05 08:57:11 -0500
+
+
+Started GET "/assets/img2.jpg" for ::1 at 2015-11-05 08:57:11 -0500
+
+
+Started GET "/assets/img4.jpg" for ::1 at 2015-11-05 08:57:11 -0500
+
+
+Started GET "/assets/tech.jpg" for ::1 at 2015-11-05 08:57:11 -0500
+
+
+Started GET "/assets/img3.jpg" for ::1 at 2015-11-05 08:57:11 -0500
+
+
+Started GET "/assets/img1.jpg" for ::1 at 2015-11-05 08:57:11 -0500
+
+
+Started GET "/post/new" for ::1 at 2015-11-05 08:57:16 -0500
+Processing by PostsController#new as HTML
+  Rendered post/new.html.erb (27.7ms)
+Completed 200 OK in 33ms (Views: 31.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Seabrook-Barnett.jpeg" for ::1 at 2015-11-05 08:57:16 -0500
+
+
+Started GET "/assets/UT.png" for ::1 at 2015-11-05 08:57:16 -0500
+
+
+Started GET "/assets/img4.jpg" for ::1 at 2015-11-05 08:57:16 -0500
+
+
+Started GET "/assets/img3.jpg" for ::1 at 2015-11-05 08:57:16 -0500
+
+
+Started GET "/assets/img2.jpg" for ::1 at 2015-11-05 08:57:16 -0500
+
+
+Started GET "/assets/img1.jpg" for ::1 at 2015-11-05 08:57:16 -0500
+
+
+Started GET "/assets/tech.jpg" for ::1 at 2015-11-05 08:57:16 -0500
+
+
+Started POST "/posts" for ::1 at 2015-11-05 08:57:23 -0500
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N9fguN4J4Oxf4PQ9O/wcOFe+10+Sb/Q2gM3Tcgv4jEXm0ZhfIsaAZK2iMgvBLd/Iw84gRdYkc25JsmSuHvxV9g==", "post"=>{"title"=>"ghgmg", "body"=>"mgmjgmj"}, "commit"=>"Save"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.2ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "ghgmg"], ["body", "mgmjgmj"], ["created_at", "2015-11-05 13:57:23.094228"], ["updated_at", "2015-11-05 13:57:23.094228"]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 12ms (ActiveRecord: 8.2ms)
+
+
+Started GET "/home" for ::1 at 2015-11-05 08:57:23 -0500
+Processing by PostsController#all as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered post/all.html.erb (9.1ms)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/Seabrook-Barnett.jpeg" for ::1 at 2015-11-05 08:57:23 -0500
+
+
+Started GET "/assets/img3.jpg" for ::1 at 2015-11-05 08:57:23 -0500
+
+
+Started GET "/assets/img4.jpg" for ::1 at 2015-11-05 08:57:23 -0500
+
+
+Started GET "/assets/tech.jpg" for ::1 at 2015-11-05 08:57:23 -0500
+
+
+Started GET "/assets/img2.jpg" for ::1 at 2015-11-05 08:57:23 -0500
+
+
+Started GET "/assets/img1.jpg" for ::1 at 2015-11-05 08:57:23 -0500
+
+
+Started GET "/assets/UT.png" for ::1 at 2015-11-05 08:57:23 -0500
