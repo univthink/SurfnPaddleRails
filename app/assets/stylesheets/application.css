@@ -31,7 +31,7 @@ div.nav ul li {
   font-family: 'Montserrat';
 }
 div.main {
-  //min-height: 910px;
+//  min-height: 500px;
   display: inline-block;
   width: 0vw;
   margin-top: 1%;
@@ -45,14 +45,14 @@ div.main-left {
   margin-left: 100px;
   margin-top: 2.5%;
   float: left;
-  //height: 110vh;
+  min-height: 1000px;
 }
 div.main-right {
   width: 20vw;
   margin-right: 10%;
   margin-top: 2.5%;
   float: right;
-  //height: 110vh;
+  min-height: 1000px;
 }
 div.main-left h1 {
   font-size: xx-large;

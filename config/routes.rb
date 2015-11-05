@@ -1,15 +1,18 @@
 Rails.application.routes.draw do
 
-  root 'application#allPosts'
+  root 'posts#index'
 
-  get 'posts/(:id)' => 'application#show'
-  def show
-  @posts = Post.all
-  @post1 = Post.find(params[:id].to_i)
-  render template: "post/post"
-end
+  get 'posts/(:id)' => 'posts#show', as: "post"
 
+  get 'post/new' => 'posts#new', as: "new"
 
+  get 'posts/(:id)/delete' => 'posts#destroy', as: "delete"
+
+  get 'posts/(:id)/edit' => 'posts#edit', as: "edit"
+
+  get 'home' => 'posts#all', as: "home"
+
+  resources :posts
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

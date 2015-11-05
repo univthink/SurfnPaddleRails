@@ -9,7 +9,8 @@
       <h2>Universally Thinking</h2>
     </div>
     <div class="nav">
-        <ul><li><%= link_to "NEW POST", new_path %></li><li><%= link_to "ALL POSTS", home_path %></li></ul>
+      <ul><li><%= link_to "NEW POST", new_path %></li><li><%= link_to "ALL POSTS", home_path %></li></ul>
+    </div>
     <div class="header">
         <center><div class="header-banner">
           <h1>Nobody likes a boring header...</h1>
@@ -19,20 +20,25 @@
 
 <div class="main">
   <div class="main-left" style=";">
-    <div class="n">
-        <h1><%= @post1.title %></h1>
+    <% @posts.each do |p| %><div class="n">
+
+        <h1><%= link_to p.title, post_path + "/#{p.id}" %></h1>
         <a href="">
               <h2 class="post-title"?
               </h2>
               <h3 class="post-subtitle">
-                <%= @post1.body %>
+                <%#= p.body %>
               </h3>
           </a>
 
-          <p class="post-meta">Posted by <a href="#"><%= @post1.author_id %></a> on <%= @post1.created_at %></p>
-    </div>
+          <p class="post-meta">Posted by <a href="#"><%= p.author_id %></a> on <%= p.created_at %></p>
 
-</div>
+    </div>
+<h6><%= link_to "DELETE", post_path + "/#{(p.id)}" + "/delete" %></h6>
+<h6><%= link_to "Edit this post", post_path + "/#{(p.id)}" + "/edit" %></h6>
+<% end %>
+
+</div></div>
   <div class="main-right">
     <center><div class="sidebar-headline">
     <img src="/assets/Seabrook-Barnett.jpeg"><br><span class="Seabrook">Seabrook Barnett</span><br><br>
@@ -42,7 +48,7 @@
   <h3 class="Seabrook">Sidebar Heading</h3><br>
   <p>Est Schlitz shoreditch fashion axe. Messenger bag cupidatat Williamsburg sustainable aliqua, artisan duis pickled pitchfork. Semiotics Banksy ad roof party, jean shorts selvage mollit vero consectetur hashtag before they sold out blue bottle qui nihil aute. Aliquip artisan retro squid ullamco. Vegan enim Williamsburg, eu umami shabby chic single-origin coffee et.</p>
 </div>
-</div>
+
   <div class="foot">
   <div><center><h1 class="footer">Most Popular</h1></center></div>
   <div class="images"><%= link_to "/posts/2" do %><i class="active"></i><img src="/assets/img1.jpg"></a><% end %>

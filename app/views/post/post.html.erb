@@ -1,3 +1,4 @@
+
 <html>
   <head>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
@@ -8,7 +9,7 @@
       <h2>Universally Thinking</h2>
     </div>
     <div class="nav">
-      <ul><li>About</li><li>Home</li></ul>
+      <ul><li><%= link_to "NEW POST", new_path %></li><li><%= link_to "ALL POSTS", home_path %></li></ul>
     </div>
     <div class="header">
         <center><div class="header-banner">
@@ -18,7 +19,9 @@
     </div>
 
 <div class="main">
-  <div class="main-left">
+  <div class="main-left" style=";">
+
+
     <% @post1 = Post.find(params[:id].to_i) %>
 
     <div class="n">
@@ -33,7 +36,6 @@
 
           <p class="post-meta">Posted by <a href="#"><%= @post1.author_id %></a> on <%= @post1.created_at %></p>
     </div>
-
 </div></div>
   <div class="main-right">
     <center><div class="sidebar-headline">
@@ -47,10 +49,10 @@
 
   <div class="foot">
   <div><center><h1 class="footer">Most Popular</h1></center></div>
-  <div class="images"><%= link_to "/posts/1" do %><i class="active"></i><img src="/assets/img1.jpg"></a><% end %>
-    <%= link_to "/posts/2" do %><i class="active"></i><img src="/assets/img2.jpg"></a><% end %>
-    <%= link_to "/posts/3" do %><i class="active"></i><img src="/assets/img3.jpg"></a><% end %>
-    <%= link_to "/posts/4" do %><i class="active"></i><img src="/assets/img4.jpg"></a><% end %></div>
+  <div class="images"><%= link_to "/posts/2" do %><i class="active"></i><img src="/assets/img1.jpg"></a><% end %>
+    <%= link_to "/posts/3" do %><i class="active"></i><img src="/assets/img2.jpg"></a><% end %>
+    <%= link_to "/posts/4" do %><i class="active"></i><img src="/assets/img3.jpg"></a><% end %>
+    <%= link_to "/posts/5" do %><i class="active"></i><img src="/assets/img4.jpg"></a><% end %></div>
   <div class="footer"><span class="footer-left">Universally Thinking 2015 | All Rights Reserved</span><span class="footer-right"><a class="link" href="#">About  </a><a class="link" href="3">Home</a></span>
   </div>
 </div>
